@@ -88,8 +88,13 @@ div.footer {
     position: absolute;
     background-size: 99vh 99vw;
     color: rgb(0, 0, 0);
-    
+  
    
+    
+}
+
+div.footer a {
+    color: white;
     
 }
 
