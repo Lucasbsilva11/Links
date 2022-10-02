@@ -6,18 +6,29 @@
 :root{
     --font01: 'Poppins', sans-serif;
     --colorbackgroud: #000000;
-    --backicons: #000000;
-    --cordoslidebotao: #ffffff;
-    --icones: #ffffff;
-    --share: #000000;
+    --backicons: #ffffff;
+    --cordoslidebotao: #5479F7;
+    --icones:#000000;
+    --share: #ffffff;
     
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 10px;
     
 }
 
 
 body{
-    background-image: url(imagens/pexels-ken-tomita-389818.jpg);
+    background-image: url(imagens/backgroud.png);
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     font-family:var(--font01);
@@ -25,17 +36,20 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 
 .share-button{
-    width: 280px;
-    height: 80px;
+    margin-top: -40px;
+    width: 450px;
+    height: 92px;
     background: var(--backicons);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -57,8 +71,9 @@ body{
     z-index: 999;
     transition: 0.43 linear;
     border-radius: 12px;
-    font-size: 1.4rem;
+    font-size: 30px;
     font-weight:600;
+    
 
 }
 
@@ -69,7 +84,7 @@ body{
 
 .share-button a {
     flex: 1;
-    font-size: 26px;
+    font-size: 35px;
     color: var(--icones);
     text-align: center;
     transform: translateX(-100%);
@@ -83,18 +98,22 @@ body{
 }
 
 div.footer {
-    
-    margin-bottom: -99vh;
-    position: absolute;
-    background-size: 99vh 99vw;
-    color: rgb(0, 0, 0);
-  
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center center;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
    
-    
 }
 
 div.footer a {
-    color: white;
+    color: #5479F7;
+    text-decoration: none;
     
 }
 
+div.footer a:hover{
+    text-decoration: underline;
+    
+}
