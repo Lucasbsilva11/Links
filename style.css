@@ -14,13 +14,24 @@
     
 }
 
-.container{
+div div.container{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 10px;
+    align-items: center;
+    padding: none;
+    margin: none;
+    
     
 }
+
+div div.container#conteudo{
+
+}
+
+
+
 
 
 body{
@@ -29,21 +40,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    margin: 0px;
-    padding: 0px;
+    width: 100vw;   
     font-family:var(--font01);
     display: flex;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+
 }
 
 
 .share-button{
-    margin-top: -40px;
-    width: 450px;
-    height: 92px;
+    
+    width: 320px;
+    height: 50px;
     background: var(--backicons);
     border-radius: 12px;
     display: flex;
@@ -54,6 +67,7 @@ body{
     position: relative;
     cursor: pointer;
     transition: 0.33 linear;
+   
 }
 
 .share-button:hover{
@@ -67,12 +81,14 @@ body{
     background: var(--cordoslidebotao);
     color: var(--share);
     text-align: center;
-    line-height: 80px;
+    line-height: 50px;
     z-index: 999;
     transition: 0.43 linear;
     border-radius: 12px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight:600;
+   
+    
     
 
 }
@@ -80,11 +96,12 @@ body{
 .share-button:hover span{
     transform: translateX(-100%);
     transition-duration: 0.3s;  
+    
 }
 
 .share-button a {
     flex: 1;
-    font-size: 35px;
+    font-size: 20px;
     color: var(--icones);
     text-align: center;
     transform: translateX(-100%);
@@ -97,13 +114,16 @@ body{
     transform: translateX(0);
 }
 
-div.footer {
-    margin-top: 30px;
+.footer {
+    margin: none;
     text-align: center;
     align-items: center;
     justify-content: center center;
     flex-direction: row;
     color: rgb(255, 255, 255);
+    padding: none;
+    margin: none;
+    
    
 }
 
@@ -117,3 +137,5 @@ div.footer a:hover{
     text-decoration: underline;
     
 }
+
+
