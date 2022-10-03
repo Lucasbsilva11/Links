@@ -14,7 +14,8 @@
     
 }
 
-div div.container{
+.container{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,15 +24,12 @@ div div.container{
     padding: none;
     margin: none;
     
+}
+
+.conteudo > img{
+    width: 100%;
+}
     
-}
-
-div div.container#conteudo{
-
-}
-
-
-
 
 
 body{
@@ -54,9 +52,8 @@ body{
 
 
 .share-button{
-    
-    width: 320px;
-    height: 50px;
+    width: 55%;
+    height: 55px;
     background: var(--backicons);
     border-radius: 12px;
     display: flex;
@@ -114,25 +111,24 @@ body{
     transform: translateX(0);
 }
 
-.footer {
+div h2 {
     margin: none;
+    font-size: 15px;
     text-align: center;
-    align-items: center;
-    justify-content: center center;
-    flex-direction: row;
     color: rgb(255, 255, 255);
-    padding: none;
-    margin: none;
-    
-   
+    padding-top: 10px;
 }
-
-div.footer a {
+    
+div h2 a {
     color: #5479F7;
     text-decoration: none;
     
 }
 
-div.footer a:hover{
+div h2 a:hover{
     text-decoration: underline;
 }
+    
+    
+    
+    
